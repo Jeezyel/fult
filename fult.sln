@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fult", "fult.csproj", "{B7024C5E-1717-482E-B47A-3BFEF61850AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7024C5E-1717-482E-B47A-3BFEF61850AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7024C5E-1717-482E-B47A-3BFEF61850AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7024C5E-1717-482E-B47A-3BFEF61850AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7024C5E-1717-482E-B47A-3BFEF61850AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F752CF88-E41E-435A-9C09-E415E9371484}
+	EndGlobalSection
+EndGlobal
