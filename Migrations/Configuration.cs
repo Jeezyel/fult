@@ -1,5 +1,6 @@
 ﻿namespace fult.Migrations
 {
+    using fult.Models;
     using System;
     using System.Collections.Generic;
     using System.Data.Entity;
@@ -17,8 +18,6 @@
         protected override void Seed(TimeFutebol.TimeFutebolDBContext context)
         {
             var timeFultbool = new List<TimeFutebol> {
-
-
                  new TimeFutebol
                 {
                     Nome = "Esporte Clube Vitória",
@@ -42,8 +41,8 @@
                     CorPrimaria = "Vermelho",
                     CorSecundaria = "Preto",
                     Status = "Ativo"
-                }
-            );
+                },
+            };
 
         }
     }

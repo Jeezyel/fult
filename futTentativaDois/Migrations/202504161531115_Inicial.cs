@@ -1,4 +1,4 @@
-﻿namespace fult.Migrations
+﻿namespace futTentativaDois.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

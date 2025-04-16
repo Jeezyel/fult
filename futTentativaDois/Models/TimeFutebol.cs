@@ -4,7 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
-namespace fult.Models
+namespace futTentativaDois.Models
 {
     public class TimeFutebol
     {
@@ -40,7 +40,7 @@ namespace fult.Models
 
         public class TimeFutebolDBContext : DbContext
         {
-            
+
             public DbSet<TimeFutebol> TimeFutebol { get; set; }
         }
     }

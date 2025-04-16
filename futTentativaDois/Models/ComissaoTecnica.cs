@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace fult.Models
+namespace futTentativaDois.Models
 {
     public class ComissaoTecnica
     {
-        
+
         public int Id { get; set; }
 
         public string Nome { get; set; }
