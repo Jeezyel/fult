@@ -3,7 +3,6 @@
     using futTentativaDois.Models;
     using System;
     using System.Collections.Generic;
-    using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
@@ -16,37 +15,38 @@
 
         protected override void Seed(futTentativaDois.Models.TimeFutebol.TimeFutebolDBContext context)
         {
-           // context.TimeFutebol.AddOrUpdate(
-                //t => t.Nome, // campo usado para evitar duplicações
-                var times = new List<TimeFutebol> 
-                { 
+
+            //var times = new List<TimeFutebol> 
+            modelBuilder.Entity<TimeFutebol>().HasData(
+                //{ 
                 
-                new TimeFutebol
-                {
-                    Nome = "Corinthians",
-                    Cidade = "São Paulo",
-                    Estado = "SP",
-                    AnoFundacao = 1910,
-                    Estadio = "Neo Química Arena",
-                    CapacidadeEstadio = 49305,
-                    CorPrimaria = "Preto",
-                    CorSecundaria = "Branco",
-                    Status = "Ativo"
-                },
-                new TimeFutebol
-                {
-                    Nome = "Flamengo",
-                    Cidade = "Rio de Janeiro",
-                    Estado = "RJ",
-                    AnoFundacao = 1895,
-                    Estadio = "Maracanã",
-                    CapacidadeEstadio = 78838,
-                    CorPrimaria = "Vermelho",
-                    CorSecundaria = "Preto",
-                    Status = "Ativo"
-                }
+                    new TimeFutebol
+                    {
+                        Nome = "Corinthians",
+                        Cidade = "São Paulo",
+                        Estado = "SP",
+                        AnoFundacao = 1910,
+                        Estadio = "Neo Química Arena",
+                        CapacidadeEstadio = 49305,
+                        CorPrimaria = "Preto",
+                        CorSecundaria = "Branco",
+                        Status = "Ativo"
+                    },
+                    new TimeFutebol
+                    {
+                        Nome = "Flamengo",
+                        Cidade = "Rio de Janeiro",
+                        Estado = "RJ",
+                        AnoFundacao = 1895,
+                        Estadio = "Maracanã",
+                        CapacidadeEstadio = 78838,
+                        CorPrimaria = "Vermelho",
+                        CorSecundaria = "Preto",
+                        Status = "Ativo"
+                    }
                 // Adicione mais times aqui se quiser
-            };
+                );
+            //};
         }
     }
 }

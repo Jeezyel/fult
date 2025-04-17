@@ -148,6 +148,14 @@
     <Compile Include="Migrations\202504161608126_TESTE_N4.Designer.cs">
       <DependentUpon>202504161608126_TESTE_N4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202504171504058_povoamento1.cs" />
+    <Compile Include="Migrations\202504171504058_povoamento1.Designer.cs">
+      <DependentUpon>202504171504058_povoamento1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202504171514017_povoamento2.cs" />
+    <Compile Include="Migrations\202504171514017_povoamento2.Designer.cs">
+      <DependentUpon>202504171514017_povoamento2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ComissaoTecnica.cs" />
     <Compile Include="Models\Enum.cs" />
@@ -256,6 +264,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202504161608126_TESTE_N4.resx">
       <DependentUpon>202504161608126_TESTE_N4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202504171504058_povoamento1.resx">
+      <DependentUpon>202504171504058_povoamento1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202504171514017_povoamento2.resx">
+      <DependentUpon>202504171514017_povoamento2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
