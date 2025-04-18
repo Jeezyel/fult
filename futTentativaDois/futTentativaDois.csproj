@@ -128,10 +128,14 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\JogadorsController.cs" />
+    <Compile Include="Controllers\PartidasController.cs" />
     <Compile Include="Controllers\TimeFutebolsController.cs" />
+    <Compile Include="Data\futTentativaDoisContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="JogadorDBContext.cs" />
     <Compile Include="Migrations\202504161531115_Inicial.cs" />
     <Compile Include="Migrations\202504161531115_Inicial.Designer.cs">
       <DependentUpon>202504161531115_Inicial.cs</DependentUpon>
@@ -166,6 +170,7 @@
     <Compile Include="TimeFutebolDBContext.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="anotacao.txt" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -221,6 +226,16 @@
     <Content Include="Views\TimeFutebols\Details.cshtml" />
     <Content Include="Views\TimeFutebols\Edit.cshtml" />
     <Content Include="Views\TimeFutebols\Index.cshtml" />
+    <Content Include="Views\Partidas\Create.cshtml" />
+    <Content Include="Views\Partidas\Delete.cshtml" />
+    <Content Include="Views\Partidas\Details.cshtml" />
+    <Content Include="Views\Partidas\Edit.cshtml" />
+    <Content Include="Views\Partidas\Index.cshtml" />
+    <Content Include="Views\Jogadors\Create.cshtml" />
+    <Content Include="Views\Jogadors\Delete.cshtml" />
+    <Content Include="Views\Jogadors\Details.cshtml" />
+    <Content Include="Views\Jogadors\Edit.cshtml" />
+    <Content Include="Views\Jogadors\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

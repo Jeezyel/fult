@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace futTentativaDois.Models
 {
@@ -9,6 +12,8 @@ namespace futTentativaDois.Models
     {
         public int Id { get; set; }
 
+        [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}",
+        ApplyFormatInEditMode = true)]
         public DateTime DataHora { get; set; }
 
         public string Estadio { get; set; }
@@ -26,5 +31,13 @@ namespace futTentativaDois.Models
 
         // Status (Futura, Em Andamento, Encerrada)
         public StatusPartida Status { get; set; }
+
+        public class PartidaDBContext : DbContext
+        {
+
+            public DbSet<Partida> Partida { get; set; }
+        }
+
+        public IEnumerable<SelectListItem> TimesDisponiveis { get; set; }
     }
 }

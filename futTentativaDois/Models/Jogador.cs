@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
@@ -28,5 +29,11 @@ namespace futTentativaDois.Models
         // Relacionamento com Time
         public int TimeFutebolId { get; set; }
         public TimeFutebol Time { get; set; }
+
+        public class JogadorDBContext : DbContext
+        {
+
+            public DbSet<Jogador> Jogador { get; set; }
+        }
     }
 }

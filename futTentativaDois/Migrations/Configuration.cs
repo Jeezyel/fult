@@ -15,10 +15,9 @@
 
         protected override void Seed(futTentativaDois.Models.TimeFutebol.TimeFutebolDBContext context)
         {
-
-            //var times = new List<TimeFutebol> 
-            modelBuilder.Entity<TimeFutebol>().HasData(
-                //{ 
+            
+            var times = new List<TimeFutebol> 
+                { 
                 
                     new TimeFutebol
                     {
@@ -45,8 +44,8 @@
                         Status = "Ativo"
                     }
                 // Adicione mais times aqui se quiser
-                );
-            //};
+                
+            };
         }
     }
 }

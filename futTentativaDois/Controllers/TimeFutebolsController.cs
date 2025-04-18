@@ -7,12 +7,15 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using futTentativaDois.Models;
+using Microsoft.Ajax.Utilities;
 
 namespace futTentativaDois.Controllers
 {
     public class TimeFutebolsController : Controller
     {
         private TimeFutebolDBContext db = new TimeFutebolDBContext();
+
+        
 
         // GET: TimeFutebols
         public ActionResult Index()

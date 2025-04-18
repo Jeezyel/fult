@@ -1,0 +1,74 @@
+﻿@model futTentativaDois.Models.Partida
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Partida</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DataHora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataHora)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estadio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estadio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeMandanteId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeMandanteId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeVisitanteId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeVisitanteId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GolsMandante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GolsMandante)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GolsVisitante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GolsVisitante)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
