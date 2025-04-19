@@ -4,7 +4,6 @@
     using System;
     using System.Collections.Generic;
     using System.Data.Entity.Migrations;
-    using System.Linq;
 
     internal sealed class Configuration : DbMigrationsConfiguration<futTentativaDois.Models.TimeFutebol.TimeFutebolDBContext>
     {
@@ -15,6 +14,8 @@
 
         protected override void Seed(futTentativaDois.Models.TimeFutebol.TimeFutebolDBContext context)
         {
+
+            base.Seed(context);
             
             var times = new List<TimeFutebol> 
             { 
@@ -134,42 +135,7 @@
             };
 
         }
-        protected void Seed(futTentativaDois.Models.Jogador.JogadorDBContext context)
-        {
-
-            
-            var jogadores = new List<Jogador>
-            {
-                new Jogador
-                {
-                    Nome = "João Silva",
-                    DataNascimento = new DateTime(1995, 4, 12),
-                    Nacionalidade = "Brasileiro",
-                    Posicao = Posicao.Atacante,
-                    NumeroCamisa = 9,
-                    Altura = 1.82,
-                    Peso = 78.5,
-                    PePreferido = PePreferido.Direito,
-                    TimeFutebolId = 1 // Corinthians, por exemplo
-                },
-                new Jogador
-                {
-                    Nome = "Carlos Mendes",
-                    DataNascimento = new DateTime(1992, 8, 23),
-                    Nacionalidade = "Brasileiro",
-                    Posicao = Posicao.Zagueiro,
-                    NumeroCamisa = 4,
-                    Altura = 1.88,
-                    Peso = 83.2,
-                    PePreferido = PePreferido.Esquerdo,
-                    TimeFutebolId = 1 // Flamengo, por exemplo
-                }
-                // Adicione mais jogadores conforme quiser
-            };
-            
-
-           
-
-        }
+       
     }
+
 }
