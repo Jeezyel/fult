@@ -15,8 +15,9 @@
         protected override void Seed(futTentativaDois.Models.TimeFutebol.TimeFutebolDBContext context)
         {
 
+            //context.nome da tabela ex: timefutibol.RemoveRenge(context.comicaoTecnica) *n e casecensitive
+
             base.Seed(context);
-            
             var times = new List<TimeFutebol> 
             { 
                 
